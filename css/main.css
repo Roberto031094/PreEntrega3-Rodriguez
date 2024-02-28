@@ -20,13 +20,33 @@ header nav ul {
   list-style: none;
 }
 header nav ul li {
+  margin-top: 10px;
   width: 100px;
   text-align: center;
-  padding-top: 10px;
 }
 header nav ul li a {
   text-decoration: none;
   color: white;
+}
+header nav ul li:not(.no-hover):hover {
+  text-decoration: none;
+  color: rgb(160, 12, 12);
+  background-color: white;
+  height: fit-content;
+}
+header nav ul li:not(.no-hover):hover a {
+  text-decoration: none;
+  color: rgb(160, 12, 12);
+}
+
+footer {
+  height: 100px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
