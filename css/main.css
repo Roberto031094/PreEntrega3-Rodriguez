@@ -56,4 +56,10 @@ main {
   background-attachment: fixed;
 }
 
+.hero{
+  background-image: url("../imagenes/banner-home.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
 /*# sourceMappingURL=main.css.map */
