@@ -39,6 +39,13 @@ header nav ul li:not(.no-hover):hover a {
   color: rgb(160, 12, 12);
 }
 
+main {
+  background-image: url("../imagenes/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 footer {
   height: 100px;
   color: white;
@@ -49,14 +56,7 @@ footer {
   align-items: center;
 }
 
-main {
-  background-image: url("../imagenes/background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.hero{
+.hero {
   background-image: url("../imagenes/banner-home.jpg");
   background-size: cover;
   height: 600px;

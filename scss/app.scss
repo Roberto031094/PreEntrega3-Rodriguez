@@ -1,13 +1,13 @@
-@import url(./general/reset.scss);
-@import url(./general/variables.scss);
+@import "./general/reset.scss";
+@import "./general/variables.scss";
 
-@import url(./layout/header.scss);
-@import url(./layout/main.scss);
-@import url(./layout/footer.scss);
+@import "./layout/header.scss";
+@import "./layout/main.scss";
+@import "./layout/footer.scss";
 
-@import url(./pages/index.scss);
-@import url(./pages/achiras.scss);
-@import url(./pages/servicios.scss);
-@import url(./pages/precios.scss);
-@import url(./pages/contacto.scss);
+@import "./pages/index.scss";
+@import "./pages/achiras.scss";
+@import "./pages/servicios.scss";
+@import "./pages/precios.scss";
+@import "./pages/contacto.scss";
 
