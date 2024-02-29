@@ -2,4 +2,36 @@
     background-image: url("../imagenes/banner-home.jpg");
     background-size: cover;
     height: 600px;
+}
+
+.seccion__explora{
+  background-image: linear-gradient(to right,$color-primario,rgb(255, 55, 55));
+  color: white;
+  h2{
+    color: white;
   }
+}
+
+.explora__icono{
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+}
+
+.explora__icono:hover{
+  box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+  -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+  -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
+}
+
+.explora__nombre{
+  font-weight: 600;
+}
+
+.avisos__publicaciones{
+  margin-top: 20px;
+  border: 2px solid black;
+  height: 200px;
+  overflow: auto;
+  background-color: rgb(243, 243, 243);
+}
