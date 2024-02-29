@@ -1,0 +1,6 @@
+footer{
+    height: 100px;
+    color: white;
+    background-color: black;
+    @include flexbox(column,center,center)
+}

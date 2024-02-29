@@ -1,0 +1,8 @@
+$color-primario: rgb(160,12,12);
+
+@mixin flexbox($direccion,$jc,$ai){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $jc;
+    align-items: $ai;
+}

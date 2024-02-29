@@ -1,55 +1,12 @@
-$color-primario: rgb(160,12,12);
+@import url(./general/reset.scss);
+@import url(./general/variables.scss);
 
-@mixin flexbox($direccion,$jc,$ai){
-    display: flex;
-    flex-direction: $direccion;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import url(./layout/header.scss);
+@import url(./layout/main.scss);
+@import url(./layout/footer.scss);
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-header{
-    height: 100px;
-    background-color: $color-primario;
-    nav{
-        ul{
-            @include flexbox(row,space-evenly,center);
-            list-style: none;
-            li{
-                margin-top: 10px;
-                width: 100px;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-            li:not(.no-hover):hover{
-                text-decoration: none;
-                color: $color-primario;
-                background-color: white;
-                height: fit-content;
-                a{
-                    text-decoration: none;
-                    color: $color-primario;
-                }
-            }
-        }
-    }
-}
-
-footer{
-    height: 100px;
-    color: white;
-    background-color: black;
-    @include flexbox(column,center,center)
-}
+@import url(./pages/index.scss);
+@import url(./pages/achiras.scss);
+@import url(./pages/servicios.scss);
+@import url(./pages/precios.scss);
+@import url(./pages/contacto.scss);

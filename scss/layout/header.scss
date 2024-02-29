@@ -1,0 +1,29 @@
+header{
+    height: 100px;
+    background-color: $color-primario;
+    nav{
+        ul{
+            @include flexbox(row,space-evenly,center);
+            list-style: none;
+            li{
+                margin-top: 10px;
+                width: 100px;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            li:not(.no-hover):hover{
+                text-decoration: none;
+                color: $color-primario;
+                background-color: white;
+                height: fit-content;
+                a{
+                    text-decoration: none;
+                    color: $color-primario;
+                }
+            }
+        }
+    }
+}
