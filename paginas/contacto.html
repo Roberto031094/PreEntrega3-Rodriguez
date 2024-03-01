@@ -20,7 +20,60 @@
         </nav>
     </header>
     <main>
-
+        <section class="contacto__formulario mt-5  mb-5 d-flex flex-column align-items-center">
+          <h2 class="formulario__titulo text-center mb-4 p-3">Escribenos a través del siguiente formulario:</h2>
+          <form action="">
+              <input type="text" placeholder="Nombre y Apellido" class="contacto__nombre">
+              <select name="Localidad" id="">
+                  <option disabled selected>Departamento</Option>
+                  <option>Capital</option>
+                  <option>Gral. Alvear</option>
+                  <option>Godoy Cruz</option>
+                  <option>Guaymallén</option>
+                  <option>Las Heras</option>
+                  <option>Lavalle</option>
+                  <option>Luján de Cuyo</option>
+                  <option>Maipú</option>
+                  <option>Malargüe</option>
+                  <option>Rivadavia</option>
+                  <option>San Carlos</option>
+                  <option>Gral. San Martín</option>
+                  <option>San Rafael</option>
+                  <option>Santa Rosa</option>
+                  <option>Tunuyán</option>
+                  <option>Tupungato</option>
+              </select> <br>
+              <input type="text" placeholder="Correo Electrónico" class="contacto__correo"><br>
+              <textarea name="consulta" id="cajaConsulta" cols="56" rows="10" placeholder="Escribe aqui tu consulta."></textarea> <br>
+              <div id="boton-submit"><input type="submit" class="enviar"></div>
+          </form>
+        </section>
+        <section class="enlaces__redes pt-5 pb-5">
+          <h2 class="enlaces__titulo text-center">Contactanos por medio de nuestras redes:</h2>
+          <ul class="enlaces__lista d-flex flex-row justify-content-evenly p-0">
+              <li><a href="https://www.facebook.com/" target="blank"><img src="../imagenes/red-facebook.png" alt="facebook" class="enlaces__icono"></a></li>
+              <li><a href="https://web.whatsapp.com/" target="blank"><img src="../imagenes/red-whatsapp.png" alt="whatsapp" class="enlaces__icono"></a></li>
+              <li><a href="https://www.instagram.com" target="blank"><img src="../imagenes/red-instagram.png" alt="instagram" class="enlaces__icono"></a></li>
+          </ul>
+        </section>
+        <section class="buscanos  mt-5 pb-5">
+          <h2 class="mapa__titulo text-center">¡Vení a visitarnos!</h2>
+          <section class="mapa__ubicacion">
+              <div class="mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1340055276532!2d-68.87883742421549!3d-32.921057570596815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e098e0971d7df%3A0xa9dc7aaab74d8d66!2sNogoli%20647%2C%20M5501HQC%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1707139099846!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="mapa__info mt-4">
+                  <h3>Dirección</h3>
+                  <p>Calle Nogolí #647, Villa Hipódromo, Godoy Cruz.</p>
+                  <br>
+                  <h3>Horarios</h3>
+                  <p>De Lunes a Sábado, desde las 9 hasta las 17 hr.</p>
+                  <br>
+                  <h3>Consideraciones</h3>
+                  <p>Haber contactado previamente para agendar.</p>
+              </div>
+           </section>
+        </section>
     </main>
     <footer>
         <p class="text-center m-0 p-0">Patrocinado por Coder</p>

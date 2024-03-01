@@ -199,4 +199,85 @@ footer {
   transform: scaleX(-1);
 }
 
+.presupuesto__contenido {
+  background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
+  color: white;
+}
+.presupuesto__contenido h2 {
+  color: white;
+}
+.presupuesto__contenido .presupuesto__info {
+  border: 1px solid white;
+}
+.presupuesto__contenido .presupuesto__info:hover {
+  box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+  -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+  -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+}
+
+.billeteras {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.billeteras:hover {
+  transform: scale(1.3, 1.3);
+  transition: all 1s ease;
+}
+
+.contacto__formulario form .contacto__nombre {
+  width: 290px;
+}
+.contacto__formulario form .contacto__correo {
+  width: 431px;
+}
+.contacto__formulario form #boton-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contacto__formulario form .enviar {
+  margin: 10px;
+  height: 30px;
+  width: 50px;
+}
+
+.enlaces__redes {
+  background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
+  color: white;
+}
+.enlaces__redes h2 {
+  color: white;
+}
+.enlaces__redes .enlaces__lista li {
+  list-style: none;
+  margin-top: 30px;
+}
+.enlaces__redes .enlaces__lista li .enlaces__icono {
+  height: 150px;
+  width: 150px;
+}
+.enlaces__redes .enlaces__lista li .enlaces__icono:hover {
+  transform: scale(1.3, 1.3);
+  transition: all 1s ease;
+}
+
+.buscanos .mapa__ubicacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.buscanos .mapa__ubicacion .mapa__info {
+  margin: 0px 20px;
+  height: 200px;
+  width: fit-content;
+}
+.buscanos .mapa__ubicacion .mapa__info h3 {
+  font-size: 26px;
+}
+.buscanos .mapa__ubicacion .mapa__info p {
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
