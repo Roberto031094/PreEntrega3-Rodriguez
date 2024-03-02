@@ -41,6 +41,11 @@ header nav ul li:not(.no-hover):hover a {
   text-decoration: none;
   color: rgb(160, 12, 12);
 }
+@media (max-width: 480px) {
+  header nav ul li {
+    width: 90px;
+  }
+}
 
 main {
   background-image: url("../imagenes/background.jpg");
@@ -64,6 +69,12 @@ footer {
   background-size: cover;
   height: 600px;
 }
+@media (max-width: 480px) {
+  .hero {
+    height: 200px;
+    background-position: left;
+  }
+}
 
 .seccion__explora {
   background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
@@ -71,6 +82,14 @@ footer {
 }
 .seccion__explora h2 {
   color: white;
+}
+@media (max-width: 480px) {
+  .seccion__explora .explora__texto {
+    margin: 40px;
+  }
+  .seccion__explora .explora__texto br {
+    display: none;
+  }
 }
 
 .explora__icono {
@@ -97,6 +116,17 @@ footer {
   background-color: rgb(243, 243, 243);
 }
 
+@media (max-width: 480px) {
+  .trabajamos__contenedor {
+    width: 80vw;
+  }
+  .explora__caja {
+    width: 35vw;
+  }
+  .valoraciones__caja {
+    width: 90vw;
+  }
+}
 .grid-servicios {
   background-image: url("../imagenes/background.jpg");
   background-position: center;

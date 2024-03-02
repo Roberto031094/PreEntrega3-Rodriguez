@@ -26,4 +26,13 @@ header{
             }
         }
     }
+    @include media-query-mobile(){
+        nav{
+            ul{
+                li{
+                    width: 90px;
+                }
+            }
+        }
+    }
 }

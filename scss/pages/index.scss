@@ -2,6 +2,10 @@
     background-image: url("../imagenes/banner-home.jpg");
     background-size: cover;
     height: 600px;
+    @include media-query-mobile(){
+      height: 200px;
+      background-position: left;
+    }
 }
 
 .seccion__explora{
@@ -10,7 +14,16 @@
   h2{
     color: white;
   }
+  @include media-query-mobile(){
+    .explora__texto{
+      margin: 40px;
+      br{
+        display: none;
+      }
+    }
+  }
 }
+
 
 .explora__icono{
   width: 150px;
@@ -34,4 +47,19 @@
   height: 200px;
   overflow: auto;
   background-color: rgb(243, 243, 243);
+}
+
+@media (max-width:480px){
+  .trabajamos__contenedor{
+    width: 80vw;
+  }
+
+  .explora__caja{
+    width: 35vw;
+  }
+
+  .valoraciones__caja{
+    width: 90vw;
+  }
+
 }

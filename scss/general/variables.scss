@@ -10,3 +10,9 @@ $color-primario: rgb(160,12,12);
 h2{
     color: $color-primario;
 }
+
+@mixin media-query-mobile{
+    @media (max-width:480px){
+        @content
+    }
+}
