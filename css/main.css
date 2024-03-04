@@ -324,6 +324,23 @@ footer {
   transition: all 1s ease;
 }
 
+@media (max-width: 480px) {
+  .presupuesto__intro {
+    margin: 20px;
+  }
+  .presupuesto__intro br {
+    display: none;
+  }
+  .presupuesto__info {
+    width: 70vw;
+  }
+  .presupuesto__info p {
+    margin-top: 10px;
+  }
+  .billeteras {
+    width: 80vw;
+  }
+}
 .contacto__formulario form .contacto__nombre {
   width: 290px;
 }
@@ -339,6 +356,17 @@ footer {
   margin: 10px;
   height: 30px;
   width: 50px;
+}
+@media (max-width: 480px) {
+  .contacto__formulario form .contacto__nombre {
+    width: 199px;
+  }
+  .contacto__formulario form .contacto__correo {
+    width: 340px;
+  }
+  .contacto__formulario form #cajaConsulta {
+    width: 340px;
+  }
 }
 
 .enlaces__redes {
@@ -360,23 +388,24 @@ footer {
   transform: scale(1.3, 1.3);
   transition: all 1s ease;
 }
+@media (max-width: 480px) {
+  .enlaces__redes .enlaces__lista li .enlaces__icono {
+    height: 90px;
+    width: 90px;
+  }
+}
 
-.buscanos .mapa__ubicacion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.buscanos .mapa__ubicacion .mapa__info {
-  margin: 0px 20px;
-  height: 200px;
-  width: fit-content;
-}
-.buscanos .mapa__ubicacion .mapa__info h3 {
-  font-size: 26px;
-}
-.buscanos .mapa__ubicacion .mapa__info p {
-  font-size: 20px;
+@media (max-width: 480px) {
+  .buscanos .mapa__ubicacion .mapa__iframe {
+    width: 90vw;
+  }
+  .buscanos .mapa__ubicacion .mapa__info {
+    width: 90vw;
+    text-align: center;
+  }
+  .buscanos .mapa__ubicacion .mapa__info br {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

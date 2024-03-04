@@ -24,3 +24,25 @@
     transform: scale(1.3,1.3);
     transition: all 1s ease;
 }
+
+@media (max-width:480px){
+    .presupuesto__intro{
+        margin: 20px;
+    }
+
+    .presupuesto__intro br{
+        display: none;
+    }
+
+    .presupuesto__info{
+        width: 70vw;
+    }
+
+    .presupuesto__info p{
+        margin-top: 10px;
+    }
+
+    .billeteras{
+        width: 80vw;
+    }
+}
