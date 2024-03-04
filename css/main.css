@@ -83,6 +83,24 @@ footer {
 .seccion__explora h2 {
   color: white;
 }
+.seccion__explora div .explora__caja .explora__icono {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+}
+.seccion__explora div .explora__caja .explora__icono:hover {
+  box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+  -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+  -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
+}
+.seccion__explora div .explora__caja .explora__nombre {
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .seccion__explora div .explora__caja {
+    width: 40vw;
+  }
+}
 @media (max-width: 480px) {
   .seccion__explora .explora__texto {
     margin: 40px;
@@ -90,22 +108,6 @@ footer {
   .seccion__explora .explora__texto br {
     display: none;
   }
-}
-
-.explora__icono {
-  width: 150px;
-  height: 150px;
-  border: 1px solid white;
-}
-
-.explora__icono:hover {
-  box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
-  -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
-  -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
-}
-
-.explora__nombre {
-  font-weight: 600;
 }
 
 .avisos__publicaciones {
@@ -117,16 +119,17 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .trabajamos__contenedor {
-    width: 80vw;
-  }
-  .explora__caja {
-    width: 35vw;
-  }
-  .valoraciones__caja {
+  .como__trabajamos div .trabajamos__contenedor {
     width: 80vw;
   }
 }
+
+@media (max-width: 480px) {
+  .seccion__valoraciones .valoraciones__caja {
+    width: 80vw;
+  }
+}
+
 @media (max-width: 480px) {
   .achiras__slide {
     width: 100vw;

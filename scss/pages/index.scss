@@ -14,6 +14,31 @@
   h2{
     color: white;
   }
+
+  div{
+    .explora__caja{
+      .explora__icono{
+        width: 150px;
+        height: 150px;
+        border: 1px solid white;
+      }
+      
+      .explora__icono:hover{
+        box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+        -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+        -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
+      }
+      
+      .explora__nombre{
+        font-weight: 600;
+      }
+    
+      @include media-query-mobile(){
+        width: 40vw;
+      }
+    }
+  }
+
   @include media-query-mobile(){
     .explora__texto{
       margin: 40px;
@@ -24,23 +49,6 @@
   }
 }
 
-
-.explora__icono{
-  width: 150px;
-  height: 150px;
-  border: 1px solid white;
-}
-
-.explora__icono:hover{
-  box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
-  -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
-  -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
-}
-
-.explora__nombre{
-  font-weight: 600;
-}
-
 .avisos__publicaciones{
   margin-top: 20px;
   border: 2px solid black;
@@ -49,17 +57,20 @@
   background-color: rgb(243, 243, 243);
 }
 
-@media (max-width:480px){
-  .trabajamos__contenedor{
-    width: 80vw;
+.como__trabajamos{
+  div{
+    .trabajamos__contenedor{
+      @include media-query-mobile(){
+        width: 80vw;
+      }
+    }
   }
+}
 
-  .explora__caja{
-    width: 35vw;
-  }
-
+.seccion__valoraciones{
   .valoraciones__caja{
-    width: 80vw;
+    @include media-query-mobile(){
+      width: 80vw;
+    }
   }
-
 }
