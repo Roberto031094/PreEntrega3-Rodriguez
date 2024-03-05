@@ -3,7 +3,7 @@
     background-size: cover;
     height: 600px;
     @include media-query-mobile(){
-      height: 200px;
+      height: 250px;
       background-position: left;
     }
 }
@@ -55,6 +55,7 @@
   height: 200px;
   overflow: auto;
   background-color: rgb(243, 243, 243);
+  padding: 10px;
 }
 
 .como__trabajamos{

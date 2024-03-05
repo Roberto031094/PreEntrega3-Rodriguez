@@ -12,7 +12,7 @@ h2{
 }
 
 @mixin media-query-mobile{
-    @media (max-width:480px){
+    @media (max-width:576px){
         @content
     }
 }

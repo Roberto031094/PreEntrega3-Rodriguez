@@ -22,13 +22,13 @@
 
         @include media-query-mobile(){
             .contacto__nombre{
-                width: 199px;
+                width: 259px;
             }
             .contacto__correo{
-                width: 340px;
+                width: 400px;
             }
             #cajaConsulta{
-                width: 340px;
+                width: 400px;
             }
         }
     }
@@ -66,6 +66,7 @@
         .mapa__ubicacion{
             .mapa__iframe{
                 width: 90vw;
+                @include flexbox(column,center,center)
             }
             .mapa__info{
                 width: 90vw;

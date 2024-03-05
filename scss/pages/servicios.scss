@@ -12,6 +12,37 @@
     ;
     column-gap: 15px;
     row-gap: 15px;
+    div{
+        .servicios__icono{
+            @include media-query-mobile(){
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+    div{
+        .respuestas-servicios{
+            br{
+                @include media-query-mobile(){
+                    display: none;
+                }
+            }
+            @include media-query-mobile(){
+                margin-top: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+    @include media-query-mobile(){
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+        ;
+    }
 }
 
 .icono-truck{
@@ -22,6 +53,11 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: truck1;
+        height: 300px;
+        width: 70px;
+    }
 }
 .icono-work{
     grid-area: work1;
@@ -31,6 +67,11 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: work1;
+        height: 300px;
+        width: 70px;
+    }
 }
 .icono-map{
     grid-area: map1;
@@ -40,6 +81,11 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: map1;
+        height: 300px;
+        width: 70px;
+    }
 }
 .hijo-servicio1{
     grid-area: serv1;
@@ -48,6 +94,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: serv1;
+        height: 300px;
+    }
 }
 .hijo-servicio2{
     grid-area: serv2;
@@ -56,6 +106,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: serv2;
+        height: 300px;
+    }
 }
 .hijo-servicio3{
     grid-area: serv3;
@@ -64,6 +118,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-mobile(){
+        grid-area: serv3;
+        height: 300px;
+    }
 }
 .icono-truck2{
     grid-area: truck2;
@@ -74,6 +132,11 @@
     justify-content: end;
     align-items: center;
     transform: scaleX(-1);
+    @include media-query-mobile(){
+        grid-area: truck2;
+        height: 300px;
+        width: 70px;
+    }
 }
 .icono-work2{
     grid-area: work2;
@@ -84,6 +147,11 @@
     justify-content: end;
     align-items: center;
     transform: scaleX(-1);
+    @include media-query-mobile(){
+        grid-area: work2;
+        height: 300px;
+        width: 70px;
+    }
 }
 .icono-map2{
     grid-area: map2;
@@ -94,74 +162,9 @@
     justify-content: end;
     align-items: center;
     transform: scaleX(-1);
-}
-
-@include media-query-mobile(){
-    .grid-servicios{
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
-            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
-            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
-        ;
-    }
-    
-    .icono-truck{
-        grid-area: truck1;
-        height: 300px;
-        width: 70px;
-    }
-    .icono-work{
-        grid-area: work1;
-        height: 300px;
-        width: 70px;
-    }
-    .icono-map{
-        grid-area: map1;
-        height: 300px;
-        width: 70px;
-    }
-    .hijo-servicio1{
-        grid-area: serv1;
-        height: 300px;
-    }
-    .hijo-servicio2{
-        grid-area: serv2;
-        height: 300px;
-    }
-    .hijo-servicio3{
-        grid-area: serv3;
-        height: 300px;
-    }
-    .icono-truck2{
-        grid-area: truck2;
-        height: 300px;
-        width: 70px;
-    }
-    .icono-work2{
-        grid-area: work2;
-        height: 300px;
-        width: 70px;
-    }
-    .icono-map2{
+    @include media-query-mobile(){
         grid-area: map2;
         height: 300px;
         width: 70px;
-    }
-    
-    .servicios__icono{
-        height: 64px;
-        width: 64px;
-    }
-
-    .respuestas-servicios{
-        margin-top: 20px;
-        text-decoration: none;
-    }
-
-    .respuestas-servicios br{
-        display: none;
     }
 }

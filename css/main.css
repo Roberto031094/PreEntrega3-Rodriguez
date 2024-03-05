@@ -41,7 +41,7 @@ header nav ul li:not(.no-hover):hover a {
   text-decoration: none;
   color: rgb(160, 12, 12);
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   header nav ul li {
     width: 90px;
   }
@@ -69,9 +69,9 @@ footer {
   background-size: cover;
   height: 600px;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .hero {
-    height: 200px;
+    height: 250px;
     background-position: left;
   }
 }
@@ -96,12 +96,12 @@ footer {
 .seccion__explora div .explora__caja .explora__nombre {
   font-weight: 600;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .seccion__explora div .explora__caja {
     width: 40vw;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .seccion__explora .explora__texto {
     margin: 40px;
   }
@@ -116,28 +116,30 @@ footer {
   height: 200px;
   overflow: auto;
   background-color: rgb(243, 243, 243);
+  padding: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .como__trabajamos div .trabajamos__contenedor {
     width: 80vw;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .seccion__valoraciones .valoraciones__caja {
     width: 80vw;
   }
 }
 
-@media (max-width: 480px) {
-  .achiras__slide {
+@media (max-width: 576px) {
+  section .achiras__slide {
     width: 100vw;
   }
-  .carousel-inner img {
+  section .achiras__slide div .carousel-inner img {
     width: 100vw;
   }
 }
+
 .grid-servicios {
   background-image: url("../imagenes/background.jpg");
   background-position: center;
@@ -149,6 +151,31 @@ footer {
   column-gap: 15px;
   row-gap: 15px;
 }
+@media (max-width: 576px) {
+  .grid-servicios div .servicios__icono {
+    height: 64px;
+    width: 64px;
+  }
+}
+@media (max-width: 576px) {
+  .grid-servicios div .respuestas-servicios br {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .grid-servicios div .respuestas-servicios {
+    margin-top: 20px;
+    text-decoration: none;
+  }
+}
+@media (max-width: 576px) {
+  .grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "truck1 serv1 serv1 serv1 serv1 serv1 truck2 " "work1 serv2 serv2 serv2 serv2 serv2 work2 " "map1 serv3 serv3 serv3 serv3 serv3 map2 ";
+  }
+}
 
 .icono-truck {
   grid-area: truck1;
@@ -158,6 +185,13 @@ footer {
   flex-direction: row;
   justify-content: end;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .icono-truck {
+    grid-area: truck1;
+    height: 300px;
+    width: 70px;
+  }
 }
 
 .icono-work {
@@ -169,6 +203,13 @@ footer {
   justify-content: end;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .icono-work {
+    grid-area: work1;
+    height: 300px;
+    width: 70px;
+  }
+}
 
 .icono-map {
   grid-area: map1;
@@ -179,6 +220,13 @@ footer {
   justify-content: end;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .icono-map {
+    grid-area: map1;
+    height: 300px;
+    width: 70px;
+  }
+}
 
 .hijo-servicio1 {
   grid-area: serv1;
@@ -187,6 +235,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .hijo-servicio1 {
+    grid-area: serv1;
+    height: 300px;
+  }
 }
 
 .hijo-servicio2 {
@@ -197,6 +251,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .hijo-servicio2 {
+    grid-area: serv2;
+    height: 300px;
+  }
+}
 
 .hijo-servicio3 {
   grid-area: serv3;
@@ -205,6 +265,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .hijo-servicio3 {
+    grid-area: serv3;
+    height: 300px;
+  }
 }
 
 .icono-truck2 {
@@ -217,6 +283,13 @@ footer {
   align-items: center;
   transform: scaleX(-1);
 }
+@media (max-width: 576px) {
+  .icono-truck2 {
+    grid-area: truck2;
+    height: 300px;
+    width: 70px;
+  }
+}
 
 .icono-work2 {
   grid-area: work2;
@@ -227,6 +300,13 @@ footer {
   justify-content: end;
   align-items: center;
   transform: scaleX(-1);
+}
+@media (max-width: 576px) {
+  .icono-work2 {
+    grid-area: work2;
+    height: 300px;
+    width: 70px;
+  }
 }
 
 .icono-map2 {
@@ -239,68 +319,14 @@ footer {
   align-items: center;
   transform: scaleX(-1);
 }
-
-@media (max-width: 480px) {
-  .grid-servicios {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "truck1 serv1 serv1 serv1 serv1 serv1 truck2 " "work1 serv2 serv2 serv2 serv2 serv2 work2 " "map1 serv3 serv3 serv3 serv3 serv3 map2 ";
-  }
-  .icono-truck {
-    grid-area: truck1;
-    height: 300px;
-    width: 70px;
-  }
-  .icono-work {
-    grid-area: work1;
-    height: 300px;
-    width: 70px;
-  }
-  .icono-map {
-    grid-area: map1;
-    height: 300px;
-    width: 70px;
-  }
-  .hijo-servicio1 {
-    grid-area: serv1;
-    height: 300px;
-  }
-  .hijo-servicio2 {
-    grid-area: serv2;
-    height: 300px;
-  }
-  .hijo-servicio3 {
-    grid-area: serv3;
-    height: 300px;
-  }
-  .icono-truck2 {
-    grid-area: truck2;
-    height: 300px;
-    width: 70px;
-  }
-  .icono-work2 {
-    grid-area: work2;
-    height: 300px;
-    width: 70px;
-  }
+@media (max-width: 576px) {
   .icono-map2 {
     grid-area: map2;
     height: 300px;
     width: 70px;
   }
-  .servicios__icono {
-    height: 64px;
-    width: 64px;
-  }
-  .respuestas-servicios {
-    margin-top: 20px;
-    text-decoration: none;
-  }
-  .respuestas-servicios br {
-    display: none;
-  }
 }
+
 .presupuesto__contenido {
   background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
   color: white;
@@ -311,39 +337,47 @@ footer {
 .presupuesto__contenido .presupuesto__info {
   border: 1px solid white;
 }
+@media (max-width: 576px) {
+  .presupuesto__contenido .presupuesto__info p {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .presupuesto__contenido .presupuesto__info {
+    width: 70vw;
+  }
+}
 .presupuesto__contenido .presupuesto__info:hover {
   box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
 }
 
-.billeteras {
+.presupuesto__billeteras section div .billeteras {
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid rgb(160, 12, 12);
 }
-
-.billeteras:hover {
+@media (max-width: 576px) {
+  .presupuesto__billeteras section div .billeteras {
+    width: 80vw;
+  }
+}
+.presupuesto__billeteras section div .billeteras:hover {
   transform: scale(1.3, 1.3);
   transition: all 1s ease;
 }
 
-@media (max-width: 480px) {
-  .presupuesto__intro {
-    margin: 20px;
-  }
-  .presupuesto__intro br {
+@media (max-width: 576px) {
+  section .presupuesto__intro br {
     display: none;
   }
-  .presupuesto__info {
-    width: 70vw;
-  }
-  .presupuesto__info p {
-    margin-top: 10px;
-  }
-  .billeteras {
-    width: 80vw;
+}
+@media (max-width: 576px) {
+  section .presupuesto__intro {
+    margin: 30px;
   }
 }
+
 .contacto__formulario form .contacto__nombre {
   width: 290px;
 }
@@ -360,15 +394,15 @@ footer {
   height: 30px;
   width: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contacto__formulario form .contacto__nombre {
-    width: 199px;
+    width: 259px;
   }
   .contacto__formulario form .contacto__correo {
-    width: 340px;
+    width: 400px;
   }
   .contacto__formulario form #cajaConsulta {
-    width: 340px;
+    width: 400px;
   }
 }
 
@@ -391,16 +425,20 @@ footer {
   transform: scale(1.3, 1.3);
   transition: all 1s ease;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .enlaces__redes .enlaces__lista li .enlaces__icono {
     height: 90px;
     width: 90px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .buscanos .mapa__ubicacion .mapa__iframe {
     width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .buscanos .mapa__ubicacion .mapa__info {
     width: 90vw;
