@@ -43,6 +43,18 @@
                 width: 400px;
             }
         }
+
+        @include media-query-desktop(){
+            .contacto__nombre{
+                width: 289px;
+            }
+            .contacto__correo{
+                width: 430px;
+            }
+            #cajaConsulta{
+                width: 430px;
+            }
+        }
     }
 }
 
@@ -91,20 +103,34 @@
    }
 
    @include media-query-tablet(){
-    .mapa__ubicacion{
-        .mapa__iframe{
-            width: 90vw;
-            @include flexbox(column,center,center)
-        }
-        .mapa__info{
-            width: 90vw;
-            text-align: center;
-            br{
-                display: none;
+        .mapa__ubicacion{
+            .mapa__iframe{
+                width: 90vw;
+                @include flexbox(column,center,center)
             }
-        }
+            .mapa__info{
+                width: 90vw;
+                text-align: center;
+                 br{
+                    display: none;
+                }
+            }
+        } 
     }
-}
+    @include media-query-desktop(){
+        .mapa__ubicacion{
+            .mapa__iframe{
+                width: 40vw;
+                @include flexbox(row,center,center)
+            }
+            .mapa__info{
+                width: 40vw;
+                 br{
+                    display: none;
+                }
+            }
+        } 
+    }
 }
 
 

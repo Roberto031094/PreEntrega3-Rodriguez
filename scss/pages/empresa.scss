@@ -23,6 +23,17 @@ section{
                 }
             }
         }
+
+        @include media-query-desktop(){
+            width: 800px;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 800px;
+                    }
+                }
+            }
+        }
     }
    
 }

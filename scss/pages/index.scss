@@ -9,6 +9,9 @@
     @include media-query-tablet(){
       height: 300px;
     }
+    @include media-query-desktop(){
+      height: 450px;
+    }
 }
 
 .seccion__explora{
@@ -41,6 +44,9 @@
       }
 
       @include media-query-tablet(){
+        width: 24vw;
+      }
+      @include media-query-desktop(){
         width: 24vw;
       }
     }
@@ -93,5 +99,9 @@
     @include media-query-tablet(){
       width: 60vw;
     }
+    @include media-query-desktop(){
+      width: 30vw;
+    }
   }
+  
 }

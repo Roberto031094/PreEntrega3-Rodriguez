@@ -1,9 +1,11 @@
 @import "./general/reset.scss";
 @import "./general/variables.scss";
+@import "./general/animation.scss";
 
 @import "./media-queries/media-queries-desktop.scss";
 @import "./media-queries/media-queries-mobile.scss";
 @import "./media-queries/media-queries-tablet.scss";
+@import "./media-queries/media-queries-small.scss";
 
 
 @import "./layout/header.scss";

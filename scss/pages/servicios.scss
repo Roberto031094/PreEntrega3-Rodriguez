@@ -14,6 +14,8 @@
     row-gap: 15px;
     div{
         .servicios__icono{
+            height: 90px;
+            width: 90px;
             @include media-query-mobile(){
                 height: 64px;
                 width: 64px;
@@ -65,16 +67,32 @@
             "map1 serv3 serv3 serv3 serv3 serv3 map2 "
         ;
     }
+
+    @include media-query-desktop(){
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+        ;
+    }
 }
 
 .icono-truck{
     grid-area: truck1;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    animation-name: movimiento-truck;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: truck1;
         height: 300px;
@@ -84,16 +102,25 @@
         grid-area: truck1;
         height: 300px;
         width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: truck1;
+        width: 200px;
     }
 }
 .icono-work{
     grid-area: work1;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    animation-name: movimiento-work;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: work1;
         height: 300px;
@@ -103,16 +130,25 @@
         grid-area: work1;
         height: 300px;
         width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: work1;
+        width: 200px;
     }
 }
 .icono-map{
     grid-area: map1;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    animation-name: movimiento-map;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: map1;
         height: 300px;
@@ -123,10 +159,14 @@
         height: 300px;
         width: 100px;
     }
+    @include media-query-desktop(){
+        grid-area: map1;
+        width: 200px;
+    }
 }
 .hijo-servicio1{
     grid-area: serv1;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +182,7 @@
 }
 .hijo-servicio2{
     grid-area: serv2;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +198,7 @@
 }
 .hijo-servicio3{
     grid-area: serv3;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,13 +214,17 @@
 }
 .icono-truck2{
     grid-area: truck2;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    transform: scaleX(-1);
+    animation-name: movimiento-truck2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: truck2;
         height: 300px;
@@ -190,18 +234,26 @@
         grid-area: truck2;
         height: 300px;
         width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: truck2;
+        width: 200px;
     }
     
 }
 .icono-work2{
     grid-area: work2;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    transform: scaleX(-1);
+    animation-name: movimiento-work;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: work2;
         height: 300px;
@@ -211,17 +263,25 @@
         grid-area: work2;
         height: 300px;
         width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: work2;
+        width: 200px;
     }
 }
 .icono-map2{
     grid-area: map2;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    transform: scaleX(-1);
+    animation-name: movimiento-map;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     @include media-query-mobile(){
         grid-area: map2;
         height: 300px;
@@ -231,5 +291,9 @@
         grid-area: map2;
         height: 300px;
         width: 100px;
+    }
+    @include media-query-desktop(){
+        grid-area: map2;
+        width: 200px;
     }
 }
