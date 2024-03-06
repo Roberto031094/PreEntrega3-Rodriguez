@@ -12,6 +12,17 @@ section{
             }
             
         }
+
+        @include media-query-tablet(){
+            width: 90vw;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 100vw;
+                    }
+                }
+            }
+        }
     }
    
 }

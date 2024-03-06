@@ -31,6 +31,18 @@
                 width: 400px;
             }
         }
+
+        @include media-query-tablet(){
+            .contacto__nombre{
+                width: 259px;
+            }
+            .contacto__correo{
+                width: 400px;
+            }
+            #cajaConsulta{
+                width: 400px;
+            }
+        }
     }
 }
 
@@ -77,6 +89,22 @@
             }
         }
    }
+
+   @include media-query-tablet(){
+    .mapa__ubicacion{
+        .mapa__iframe{
+            width: 90vw;
+            @include flexbox(column,center,center)
+        }
+        .mapa__info{
+            width: 90vw;
+            text-align: center;
+            br{
+                display: none;
+            }
+        }
+    }
+}
 }
 
 

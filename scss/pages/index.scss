@@ -6,6 +6,9 @@
       height: 250px;
       background-position: left;
     }
+    @include media-query-tablet(){
+      height: 300px;
+    }
 }
 
 .seccion__explora{
@@ -36,17 +39,28 @@
       @include media-query-mobile(){
         width: 40vw;
       }
+
+      @include media-query-tablet(){
+        width: 24vw;
+      }
     }
   }
 
-  @include media-query-mobile(){
-    .explora__texto{
+  .explora__texto{
+    @include media-query-mobile(){
       margin: 40px;
       br{
         display: none;
       }
     }
+    @include media-query-tablet(){
+      margin: 50px;
+      br{
+        display: none;
+      }
+    }
   }
+  
 }
 
 .avisos__publicaciones{
@@ -64,6 +78,9 @@
       @include media-query-mobile(){
         width: 80vw;
       }
+      @include media-query-tablet(){
+        width: 40vw;
+      }
     }
   }
 }
@@ -72,6 +89,9 @@
   .valoraciones__caja{
     @include media-query-mobile(){
       width: 80vw;
+    }
+    @include media-query-tablet(){
+      width: 60vw;
     }
   }
 }

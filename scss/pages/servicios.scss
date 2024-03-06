@@ -18,6 +18,10 @@
                 height: 64px;
                 width: 64px;
             }
+            @include media-query-tablet(){
+                height: 80px;
+                width: 80px;
+            }
         }
     }
     div{
@@ -26,14 +30,32 @@
                 @include media-query-mobile(){
                     display: none;
                 }
+                @include media-query-tablet(){
+                    display: none;
+                }
             }
             @include media-query-mobile(){
+                margin-top: 20px;
+                text-decoration: none;
+            }
+            @include media-query-tablet(){
                 margin-top: 20px;
                 text-decoration: none;
             }
         }
     }
     @include media-query-mobile(){
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+        ;
+    }
+
+    @include media-query-tablet(){
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: auto auto auto;
@@ -58,6 +80,11 @@
         height: 300px;
         width: 70px;
     }
+    @include media-query-tablet(){
+        grid-area: truck1;
+        height: 300px;
+        width: 100px;
+    }
 }
 .icono-work{
     grid-area: work1;
@@ -71,6 +98,11 @@
         grid-area: work1;
         height: 300px;
         width: 70px;
+    }
+    @include media-query-tablet(){
+        grid-area: work1;
+        height: 300px;
+        width: 100px;
     }
 }
 .icono-map{
@@ -86,6 +118,11 @@
         height: 300px;
         width: 70px;
     }
+    @include media-query-tablet(){
+        grid-area: map1;
+        height: 300px;
+        width: 100px;
+    }
 }
 .hijo-servicio1{
     grid-area: serv1;
@@ -95,6 +132,10 @@
     justify-content: center;
     align-items: center;
     @include media-query-mobile(){
+        grid-area: serv1;
+        height: 300px;
+    }
+    @include media-query-tablet(){
         grid-area: serv1;
         height: 300px;
     }
@@ -110,6 +151,10 @@
         grid-area: serv2;
         height: 300px;
     }
+    @include media-query-tablet(){
+        grid-area: serv2;
+        height: 300px;
+    }
 }
 .hijo-servicio3{
     grid-area: serv3;
@@ -119,6 +164,10 @@
     justify-content: center;
     align-items: center;
     @include media-query-mobile(){
+        grid-area: serv3;
+        height: 300px;
+    }
+    @include media-query-tablet(){
         grid-area: serv3;
         height: 300px;
     }
@@ -137,6 +186,12 @@
         height: 300px;
         width: 70px;
     }
+    @include media-query-tablet(){
+        grid-area: truck2;
+        height: 300px;
+        width: 100px;
+    }
+    
 }
 .icono-work2{
     grid-area: work2;
@@ -152,6 +207,11 @@
         height: 300px;
         width: 70px;
     }
+    @include media-query-tablet(){
+        grid-area: work2;
+        height: 300px;
+        width: 100px;
+    }
 }
 .icono-map2{
     grid-area: map2;
@@ -166,5 +226,10 @@
         grid-area: map2;
         height: 300px;
         width: 70px;
+    }
+    @include media-query-tablet(){
+        grid-area: map2;
+        height: 300px;
+        width: 100px;
     }
 }
