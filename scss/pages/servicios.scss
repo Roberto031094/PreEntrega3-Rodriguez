@@ -16,6 +16,10 @@
         .servicios__icono{
             height: 90px;
             width: 90px;
+            @include media-query-small(){
+                height: 50px;
+                width: 50px;
+            }
             @include media-query-mobile(){
                 height: 64px;
                 width: 64px;
@@ -29,12 +33,19 @@
     div{
         .respuestas-servicios{
             br{
+                @include media-query-small(){
+                    display: none;
+                }
                 @include media-query-mobile(){
                     display: none;
                 }
                 @include media-query-tablet(){
                     display: none;
                 }
+            }
+            @include media-query-small(){
+                margin-top: 20px;
+                text-decoration: none;
             }
             @include media-query-mobile(){
                 margin-top: 20px;
@@ -45,6 +56,16 @@
                 text-decoration: none;
             }
         }
+    }
+    @include media-query-small(){
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+        ;
     }
     @include media-query-mobile(){
         display: grid;
@@ -89,10 +110,15 @@
     justify-content: end;
     align-items: center;
     animation-name: movimiento-truck;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: truck1;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: truck1;
         height: 300px;
@@ -121,6 +147,11 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: work1;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: work1;
         height: 300px;
@@ -145,10 +176,15 @@
     justify-content: end;
     align-items: center;
     animation-name: movimiento-map;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: map1;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: map1;
         height: 300px;
@@ -171,6 +207,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-small(){
+        grid-area: serv1;
+        height: 300px;
+    }
     @include media-query-mobile(){
         grid-area: serv1;
         height: 300px;
@@ -187,6 +227,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-small(){
+        grid-area: serv2;
+        height: 300px;
+    }
     @include media-query-mobile(){
         grid-area: serv2;
         height: 300px;
@@ -203,6 +247,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query-small(){
+        grid-area: serv3;
+        height: 300px;
+    }
     @include media-query-mobile(){
         grid-area: serv3;
         height: 300px;
@@ -221,10 +269,15 @@
     justify-content: start;
     align-items: center;
     animation-name: movimiento-truck2;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: truck2;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: truck2;
         height: 300px;
@@ -254,6 +307,11 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: work2;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: work2;
         height: 300px;
@@ -278,10 +336,15 @@
     justify-content: start;
     align-items: center;
     animation-name: movimiento-map;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include media-query-small(){
+        grid-area: map2;
+        height: 300px;
+        width: 60px;
+    }
     @include media-query-mobile(){
         grid-area: map2;
         height: 300px;

@@ -7,12 +7,18 @@
     .presupuesto__info{
         border: 1px solid white;
         p{
+            @include media-query-small(){
+                margin-top: 10px;
+            }
             @include media-query-mobile(){
                 margin-top: 10px;
             }
             @include media-query-tablet(){
                 margin-top: 10px;
             }
+        }
+        @include media-query-small(){
+            width: 60vw;
         }
         @include media-query-mobile(){
             width: 60vw;
@@ -35,6 +41,9 @@
             .billeteras{
                 background-color: white;
                 border: 3px solid $color-primario;
+                @include media-query-small(){
+                    width: 80vw;
+                }
                 @include media-query-mobile(){
                     width: 80vw;
                 }
@@ -54,9 +63,15 @@
 section{
     .presupuesto__intro{
         br{
+            @include media-query-small(){
+                display: none;
+            }
             @include media-query-mobile(){
                 display: none;
             }
+        }
+        @include media-query-small(){
+            margin: 20px;
         }
         @include media-query-mobile(){
             margin: 30px;

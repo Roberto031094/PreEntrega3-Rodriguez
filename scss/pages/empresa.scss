@@ -1,6 +1,16 @@
 
 section{
     .achiras__slide{
+        @include media-query-small(){
+            width: 100vw;
+            div{
+                .carousel-inner{
+                    img{
+                        width: 100vw;
+                    }
+                }
+            }
+        }
         @include media-query-mobile(){
             width: 100vw;
             div{

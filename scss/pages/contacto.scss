@@ -19,6 +19,17 @@
             height: 30px;
             width: 50px;
         }
+        @include media-query-small(){
+            .contacto__nombre{
+                width: 199px;
+            }
+            .contacto__correo{
+                width: 340px;
+            }
+            #cajaConsulta{
+                width: 340px;
+            }
+        }
 
         @include media-query-mobile(){
             .contacto__nombre{
@@ -75,7 +86,12 @@
             transform: scale(1.3,1.3);
             transition: all 1s ease;
         }
-
+        @include media-query-small(){
+            .enlaces__icono{
+                height: 90px;
+                width: 90px;
+            }
+        }
         @include media-query-mobile(){
             .enlaces__icono{
                 height: 90px;
@@ -83,9 +99,26 @@
             }
         }
     }
+    
 }
 
 .buscanos{
+    @include media-query-small(){
+        .mapa__ubicacion{
+            .mapa__iframe{
+                width: 100vw;
+                overflow-x: hidden;
+                @include flexbox(column,center,center)
+            }
+            .mapa__info{
+                width: 90vw;
+                text-align: center;
+                br{
+                    display: none;
+                }
+            }
+        }
+   }
    @include media-query-mobile(){
         .mapa__ubicacion{
             .mapa__iframe{

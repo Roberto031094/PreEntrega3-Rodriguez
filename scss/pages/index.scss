@@ -12,6 +12,9 @@
     @include media-query-desktop(){
       height: 450px;
     }
+    @include media-query-small(){
+      height: 200px;
+    }
 }
 
 .seccion__explora{
@@ -49,6 +52,9 @@
       @include media-query-desktop(){
         width: 24vw;
       }
+      @include media-query-small(){
+        width: 50vw;
+      }
     }
   }
 
@@ -61,6 +67,12 @@
     }
     @include media-query-tablet(){
       margin: 50px;
+      br{
+        display: none;
+      }
+    }
+    @include media-query-small(){
+      margin: 40px;
       br{
         display: none;
       }
@@ -87,6 +99,9 @@
       @include media-query-tablet(){
         width: 40vw;
       }
+      @include media-query-small(){
+        width: 80vw;
+      }
     }
   }
 }
@@ -101,6 +116,9 @@
     }
     @include media-query-desktop(){
       width: 30vw;
+    }
+    @include media-query-small(){
+      width: 80vw;
     }
   }
   
