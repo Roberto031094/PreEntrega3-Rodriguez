@@ -30,7 +30,7 @@
         div{
             .billeteras{
                 background-color: white;
-                border: 2px solid $color-primario;
+                border: 3px solid $color-primario;
                 @include media-query-mobile{
                     width: 80vw;
                 }

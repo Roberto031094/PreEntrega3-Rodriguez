@@ -355,7 +355,7 @@ footer {
 
 .presupuesto__billeteras section div .billeteras {
   background-color: white;
-  border: 2px solid rgb(160, 12, 12);
+  border: 3px solid rgb(160, 12, 12);
 }
 @media (max-width: 576px) {
   .presupuesto__billeteras section div .billeteras {
