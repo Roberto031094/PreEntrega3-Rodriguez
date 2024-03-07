@@ -145,18 +145,21 @@ footer {
 .seccion__explora h2 {
   color: white;
 }
-.seccion__explora div .explora__caja .explora__icono {
+.seccion__explora div .explora__caja a .explora__icono {
   width: 150px;
   height: 150px;
   border: 1px solid white;
 }
-.seccion__explora div .explora__caja .explora__icono:hover {
+.seccion__explora div .explora__caja a .explora__icono:hover {
   box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -webkit-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
   -moz-box-shadow: 1px 5px 49px 1px rgba(255, 255, 255, 0.49);
 }
 .seccion__explora div .explora__caja .explora__nombre {
   font-weight: 600;
+}
+.seccion__explora div .explora__caja .explora__descripcion {
+  height: 80px;
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .seccion__explora div .explora__caja {
