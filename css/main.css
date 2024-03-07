@@ -37,7 +37,7 @@ h2 {
 }
 @keyframes movimiento-map {
   50% {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.8, 0.8);
   }
   100% {
     transform: scale(1, 1);
@@ -486,7 +486,7 @@ footer {
   justify-content: end;
   align-items: center;
   animation-name: movimiento-map;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -693,7 +693,7 @@ footer {
   justify-content: start;
   align-items: center;
   animation-name: movimiento-map;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -768,8 +768,8 @@ footer {
 }
 
 .presupuesto__billeteras section div .billeteras {
-  background-color: white;
-  border: 3px solid rgb(160, 12, 12);
+  border-radius: 20px;
+  border: 2px solid rgb(160, 12, 12);
 }
 @media (min-width: 360px) and (max-width: 575px) {
   .presupuesto__billeteras section div .billeteras {
@@ -787,7 +787,7 @@ footer {
   }
 }
 .presupuesto__billeteras section div .billeteras:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.2, 1.2);
   transition: all 1s ease;
 }
 
