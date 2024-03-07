@@ -17,6 +17,16 @@
     }
 }
 
+section{
+  h1{
+    br{
+      @include media-query-small(){
+        display: none;
+      }
+    }
+  }
+}
+
 .seccion__explora{
   background-image: linear-gradient(to top,$color-primario,rgb(255, 31, 31));
   color: white;
@@ -93,6 +103,9 @@
   overflow: auto;
   background-color: rgb(243, 243, 243);
   padding: 10px;
+  strong{
+    color: $color-primario;
+  }
 }
 
 .como__trabajamos{

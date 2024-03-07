@@ -45,7 +45,7 @@ h2 {
 }
 header {
   height: 100px;
-  background-color: rgb(160, 12, 12);
+  background-image: linear-gradient(to right, rgb(160, 12, 12), rgb(223, 0, 0), rgb(160, 12, 12));
 }
 header nav ul {
   display: flex;
@@ -138,6 +138,12 @@ footer {
   }
 }
 
+@media (min-width: 360px) and (max-width: 575px) {
+  section h1 br {
+    display: none;
+  }
+}
+
 .seccion__explora {
   background-image: linear-gradient(to top, rgb(160, 12, 12), rgb(255, 31, 31));
   color: white;
@@ -213,6 +219,9 @@ footer {
   overflow: auto;
   background-color: rgb(243, 243, 243);
   padding: 10px;
+}
+.avisos__publicaciones strong {
+  color: rgb(160, 12, 12);
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

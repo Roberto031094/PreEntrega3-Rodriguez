@@ -1,6 +1,6 @@
 header{
     height: 100px;
-    background-color: $color-primario;
+    background-image: linear-gradient(to right,$color-primario,rgb(223, 0, 0),$color-primario);
     nav{
         ul{
             @include flexbox(row,space-evenly,center);
